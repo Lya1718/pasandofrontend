@@ -1,0 +1,76 @@
+{
+  "persona": [
+    {
+      "nombre": "Lourdes",
+      "apellido": "Ramos",
+      "sobre_mi": "Soy una desarrolladora web ubicada en Argentina con un especial interés en la creación y diseño de obras completamente originales, autodidacta, trabajadora independiente y amante de la música.",
+      "url_perfil": "https://static.vecteezy.com/system/resources/thumbnails/005/544/718/small/profile-icon-design-free-vector.jpg",
+      "url_portada": "https://wallpaperaccess.com/full/235784.jpg",
+      "url_correo": "ramoslou137@gmail.com",
+      "url_github": "https://github.com/Lya1718",
+      "id": 1
+    }
+  ],
+  "educacion": [
+    {
+      "id": 1,
+      "institucion": "E.P.E.S. N°2 \"Batalla de Maipú\"",
+      "titulo": "Escuela Secundaria",
+      "descripcion": "2016-2021"
+    },
+    {
+      "id": 3,
+      "institucion": "Future Learn",
+      "titulo": "Basic English 1: Elementary",
+      "descripcion": "2021"
+    }
+  ],
+  "habilidad": [
+    {
+      "id": 1,
+      "hability": "Java",
+      "nivel": 30
+    },
+    {
+      "id": 2,
+      "hability": "Inglés",
+      "nivel": 80
+    },
+    {
+      "id": 3,
+      "hability": "Git",
+      "nivel": 40
+    },
+    {
+      "id": 4,
+      "hability": "Angular",
+      "nivel": 50
+    }
+  ],
+  "project": [
+    {
+      "id": 1,
+      "titulo": "Proyecto 1",
+      "descripcion": "Próximamente",
+      "image": "https://us.123rf.com/450wm/blankstock/blankstock1408/blankstock140801059/30496471-signo-de-interrogaci%C3%B3n-signo-icono-s%C3%ADmbolo-de-ayuda-signo-de-preguntas-frecuentes-bot%C3%B3n-plano-gris-c.jpg?ver=6"
+    },
+    {
+      "id": 2,
+      "titulo": "Proyecto 2",
+      "descripcion": "Próximamente",
+      "image": "https://us.123rf.com/450wm/blankstock/blankstock1408/blankstock140801059/30496471-signo-de-interrogaci%C3%B3n-signo-icono-s%C3%ADmbolo-de-ayuda-signo-de-preguntas-frecuentes-bot%C3%B3n-plano-gris-c.jpg?ver=6"
+    },
+    {
+      "id": 3,
+      "titulo": "Proyecto 3",
+      "descripcion": "Próximamente",
+      "image": "https://us.123rf.com/450wm/blankstock/blankstock1408/blankstock140801059/30496471-signo-de-interrogaci%C3%B3n-signo-icono-s%C3%ADmbolo-de-ayuda-signo-de-preguntas-frecuentes-bot%C3%B3n-plano-gris-c.jpg?ver=6"
+    },
+    {
+      "id": 4,
+      "titulo": "Proyecto 4",
+      "descripcion": "Próximamente",
+      "image": "https://us.123rf.com/450wm/blankstock/blankstock1408/blankstock140801059/30496471-signo-de-interrogaci%C3%B3n-signo-icono-s%C3%ADmbolo-de-ayuda-signo-de-preguntas-frecuentes-bot%C3%B3n-plano-gris-c.jpg?ver=6"
+    }
+  ]
+}

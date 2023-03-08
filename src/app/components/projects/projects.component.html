@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-12 text-center">
+    <h3 class="texto mt-5 fs-1 fw-bold d-flex justify-content-center">Proyectos</h3>
+    <br>
+      <a *ngIf="login" class="botones" routerLink="/projects-add"><img class="agregar" src="\assets\sumablanca.jpg" alt="agregar"></a>
+    <!-- <a class="botones" routerLink="/projects-add"><img class="agregar" src="\assets\sumablanca.jpg" alt="agregar"></a> -->
+  </div>
+</div>
+<div class="row d-flex justify-content-center align-items-center">
+  <div class="col-6 text-bg-dark card m-4" *ngFor="let form of formList" style="width: 18rem;">
+    <div class="mt-2">
+      <img [src]="form.image" class="card-img-top" [alt]="form.titulo">
+    </div>
+    <div class="card-body text-center">
+      <p class="card-title">{{form.titulo}}</p>
+      <p class="card-text">{{form.descripcion}}</p>
+      <div *ngIf="login">
+        <a class="botones" (click)="editForm(form.id, form.titulo, form.descripcion, form.image)" routerLink="/projects-edit"><img class="editar" src="\assets\lapizblanco.jpg" alt="editar"></a>
+      <button type="button" class="btn" (click)="deleteProject(form)"
+        style="background-color: #F5B1AA;">Eliminar</button>
+      </div>
+      <!-- <button type="button" class="btn" style="background-color: #F5B1AA;">Eliminar</button> -->
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div>
+    <br>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<!-- PERFIL -->
+<div *ngFor="let form of formList">
+    <div>
+        <div id="descripcion" class="col-12">
+            <!-- <img id="perfil-imagen" src="\assets\lya.png" class="img-fluid" alt="..."> -->
+            <img id="perfil-imagen" [src]="form.url_perfil" class="img-fluid" [alt]="form.nombre">
+        </div>
+        <div class="position-relative row text-center blanco">
+            <div class="d-flex justify-content-center">
+                <br>
+            </div>
+            <!-- BUTTON -->
+            <div>
+                <a href="#descripcion">
+                    <img class="buton" src="\assets\arrow-down.png" id="flecha" alt="scroll down">
+                </a>
+            </div>
+        </div>
+        <!-- ABOUT -->
+        <div class="row">
+            <div class="text-center divName">
+                <!-- <h1 class="texto fw-bold fw-2" style="color:white">Soy Lourdes!</h1> -->
+                <h3 style="color:white">Soy {{form.nombre}}</h3>
+                <div>
+                    <!-- <button type="button" (click)="deletePersona(form)" class="btn" style="background-color: #F5B1AA;">Eliminar</button> -->
+                </div>
+            </div>
+            <div class="col-3"></div>
+            <div class="col-6 text-center">
+                <p class="textoInfo d-flex justify-content-center" style="margin-top:2rem" style="color:white">
+                    {{form.sobre_mi}}</p>
+                <!-- <p id="descripcion" class="textoInfo d-flex justify-content-center" style="margin-top:2rem;color:white">
+                    Soy
+                    una desarrolladora web ubicada en Argentina con un especial interés en la creación y diseño
+                    de obras completamente originales, autodidacta, trabajadora independiente y amante de
+                    la música.</p> -->
+                <a *ngIf="login" (click)="editForm(form.id, form.nombre, form.apellido, form.sobre_mi, form.url_perfil, 
+                form.url_portada, form.url_correo, form.url_github)" class="botones" routerLink="/about-edit"><img
+                        class="editar" src="\assets\lapizblanco.jpg" alt="editar"></a>
+                <br>
+                <hr>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>

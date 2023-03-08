@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6 text-center">
+        <div style="color:white">
+            <div>
+                <h2 class="texto fs-1 fw-bold mt-5">Formación Académica</h2>
+                <br>
+                    <a *ngIf="login" class="botones" routerLink="/education-add"><img class="agregar"
+                            src="\assets\sumablanca.jpg" alt="agregar"></a>
+                <!-- <a class="botones" routerLink="/education-add"><img class="agregar" src="\assets\sumablanca.jpg"
+                        alt="agregar"></a> -->
+            </div>
+        </div>
+        <hr>
+        <div>
+            <div *ngFor="let form of formList">
+                <!-- <a class="botones" (click)="editForm(form.id)" routerLink="/education-edit"><img class="editar"
+                    src="\assets\lapizblanco.jpg" alt="editar"></a> -->
+                <!-- <div> -->
+                <div class="m-5 d-flex justify-content-center align-items-center" style="color:white">
+                    <ul class="fs-3">
+                        <p class="fw-bold">{{form.titulo}}</p>
+                        <!-- <p class="fw-bold">Escuela Secundaria</p> -->
+                        <li>{{form.institucion}} {{form.descripcion}}</li>
+                        <!-- <li>E.P.E.S. N°2 "Batalla de Maipú" 2016-2021</li> -->
+                    </ul>
+                </div>
+                <div *ngIf="login" class="mt-5" style="color:white">
+                    <a *ngIf="login" class="botones" (click)="editForm(form.id, form.institucion, form.titulo, form.descripcion)"
+                        routerLink="/education-edit"><img class="editar" src="\assets\lapizblanco.jpg"
+                            alt="agregar"></a>
+                    <button type="button" class="btn" (click)="deleteEducacion(form)"
+                        style="background-color: #F5B1AA;">Eliminar</button>
+                    <!-- <button type="button" class="btn" style="background-color: #F5B1AA;">Eliminar</button> -->
+                </div>
+                <!-- <br> -->
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="col-3"></div>
+</div>
